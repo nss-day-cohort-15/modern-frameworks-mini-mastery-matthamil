@@ -1,0 +1,34 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>
+        Category
+      </th>
+      <th>
+        Description
+      </th>
+      <th>
+        Price
+      </th>
+      <th>
+        Title
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="flower in arrangements">
+      <td>
+        {{flower.category}}
+      </td>
+      <td>
+        {{flower.description}}
+      </td>
+      <td>
+        {{flower.price}}
+      </td>
+      <td>
+        {{flower.title}}
+      </td>
+    </tr>
+  </tbody>
+</table>
