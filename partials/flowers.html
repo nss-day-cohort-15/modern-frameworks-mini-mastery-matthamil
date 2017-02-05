@@ -1,0 +1,107 @@
+<h1>Holiday</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th>
+        Category
+      </th>
+      <th>
+        Description
+      </th>
+      <th>
+        Price
+      </th>
+      <th>
+        Title
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="flower in arrangements | filter: { 'category': 'holiday'}">
+      <td>
+        {{flower.category}}
+      </td>
+      <td>
+        {{flower.description}}
+      </td>
+      <td>
+        {{flower.price | currency}}
+      </td>
+      <td>
+        {{flower.title}}
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h1>Bereavement</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th>
+        Category
+      </th>
+      <th>
+        Description
+      </th>
+      <th>
+        Price
+      </th>
+      <th>
+        Title
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="flower in arrangements | filter: {'category': 'bereavement'}">
+      <td>
+        {{flower.category}}
+      </td>
+      <td>
+        {{flower.description}}
+      </td>
+      <td>
+        {{flower.price | currency}}
+      </td>
+      <td>
+        {{flower.title}}
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h1>Misc</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th>
+        Category
+      </th>
+      <th>
+        Description
+      </th>
+      <th>
+        Price
+      </th>
+      <th>
+        Title
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="flower in arrangements | filter: { 'category': 'misc'}">
+      <td>
+        {{flower.category}}
+      </td>
+      <td>
+        {{flower.description}}
+      </td>
+      <td>
+        {{flower.price | currency}}
+      </td>
+      <td>
+        {{flower.title}}
+      </td>
+    </tr>
+  </tbody>
+</table>
